@@ -31,7 +31,7 @@ const AboutMe = () => {
 							{icon}
 						</SocailLink>
 					))}
-					<Image src="/profile-pic.jpg" alt="profile picture" fill />
+					<Image src="/profile-pic.jpg" alt="profile picture" height={200} width={200} />
 				</ProfilePicture>
 				<h1 className="name">{languageTexts.aboutMe.name}</h1>
 				<h2 className="title">{languageTexts.aboutMe.title}</h2>

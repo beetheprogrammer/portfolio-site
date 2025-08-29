@@ -44,6 +44,8 @@ export const ProfilePicture = styled.div`
 		object-fit: cover;
 		border-bottom: 4px solid ${(props) => props.theme.white};
 		border-right: 4px solid ${(props) => props.theme.white};
+		width: 100%;
+		height: 100%;
 	}
 `;
 

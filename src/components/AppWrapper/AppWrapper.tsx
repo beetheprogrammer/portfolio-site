@@ -10,6 +10,7 @@ import {
 } from "./AppWrapper.styles";
 import AboutMe from "../AboutMe/AboutMe";
 import { ILanguageTexts, LANGUAGE } from "@/utils/text";
+import { usePathname } from "next/navigation";
 
 interface IAppContext {
 	theme: ITheme;
@@ -18,6 +19,7 @@ interface IAppContext {
 	toggleLanguage: () => void;
 	languageTexts: ILanguageTexts;
 	themeType: "light" | "dark";
+	isHomePage: boolean;
 }
 
 export const AppContext = createContext<IAppContext | null>(null);
@@ -25,6 +27,8 @@ export const AppContext = createContext<IAppContext | null>(null);
 const AppWrapper = ({ children }: { children: React.ReactNode }) => {
 	const [theme, setTheme] = useState<"light" | "dark">("light");
 	const [language, setLanguage] = useState<"en" | "fr">("en");
+	const pathname = usePathname();
+	const isHomePage = pathname === "/"
 
 	const toggleTheme = () => {
 		setTheme(theme === "light" ? "dark" : "light");
@@ -41,6 +45,7 @@ const AppWrapper = ({ children }: { children: React.ReactNode }) => {
 		toggleTheme,
 		toggleLanguage,
 		currentLanguage: language,
+		isHomePage
 	};
 
 	return (
