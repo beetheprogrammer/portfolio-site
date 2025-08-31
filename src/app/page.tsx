@@ -1,4 +1,5 @@
 import Projects from "./projects/page";
+import SkillsPage from "./skills/page";
 import WorkHistoryPage from "./work-history/page";
 
 export default function Home() {
@@ -6,6 +7,12 @@ export default function Home() {
     <div >
       <Projects/>
       <WorkHistoryPage/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <SkillsPage/>
     </div>
   );
 }
