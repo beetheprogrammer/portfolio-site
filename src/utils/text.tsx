@@ -13,6 +13,8 @@ export interface ILanguageTexts {
 	education: {
 		title: string;
 		viewCertification: string;
+		accomplishment: string;
+		viewFullEducationHistory: string;
 		educationHistory: {
 			date: string;
 			program: string;
@@ -189,6 +191,8 @@ export const englishTexts: ILanguageTexts = {
 	education: {
 		title: "Education",
 		viewCertification: "View Certification",
+		accomplishment: "Accomplishment",
+		viewFullEducationHistory: "View Full Education History",
 		educationHistory: [
 			{
 				date: "2022 - 2025",
@@ -669,6 +673,8 @@ export const frenchTexts: ILanguageTexts = {
 	education: {
 		title: "Éducation",
 		viewCertification: "Voir la Certification",
+		accomplishment: "Accomplissement",
+		viewFullEducationHistory: "Afficher l’historique complet de l’éducation",
 		educationHistory: [
 			{
 				date: "2022 - 2025",
