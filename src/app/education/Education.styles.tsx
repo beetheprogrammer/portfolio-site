@@ -6,7 +6,7 @@ export const EducationHistory = styled.div`
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-	padding: 3vw 2vw ;
+	padding: 0vw 2vw 2vw 2vw ;
 
 	.heading {
 		border-bottom: 2px solid ${(props) => props.theme.gray_1};

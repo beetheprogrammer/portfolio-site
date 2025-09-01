@@ -1,5 +1,6 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import {
+	AiChatAction,
 	NavigationMenuAction,
 	NavigationMenuContainer,
 	NavigationMenuItem,
@@ -7,12 +8,14 @@ import {
 } from "./NavigationMenu.styles";
 import { AppContext } from "../AppWrapper/AppWrapper";
 import { RxFontFamily } from "react-icons/rx";
-import { RiEnglishInput } from "react-icons/ri";
+import { RiChatAiLine, RiEnglishInput } from "react-icons/ri";
 import { TbBulb, TbBulbOff } from "react-icons/tb";
 import { NavigationMenus } from "./NavigationMenu.utils";
 import { usePathname } from "next/navigation";
+import AIChat from "../AIChat/AIChat";
 
 const NavigationMenu = () => {
+	const [isAiChatVisible, setIsAiChatVisible] = useState(false);
 	const { currentLanguage, theme, toggleLanguage, themeType, toggleTheme } =
 		useContext(AppContext)!;
 	const pathname = usePathname();
@@ -52,6 +55,12 @@ const NavigationMenu = () => {
 					</NavigationMenuItem>
 				))}
 			</NavigationMenusBox>
+			<AiChatAction onClick={() => setIsAiChatVisible(true)}>
+				<RiChatAiLine size={"1.4vw"} color={theme.white} />
+				<div className={`chatBox ${!isAiChatVisible ? "chatBoxHidden" : ""}`}>
+					<AIChat closeChatBox={() => setIsAiChatVisible(false)} />
+				</div>
+			</AiChatAction>
 		</NavigationMenuContainer>
 	);
 };

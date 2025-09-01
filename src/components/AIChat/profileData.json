@@ -1,0 +1,329 @@
+{
+  "aboutMe": {
+    "name": "John DoeReMi",
+    "title": "Front-End Developer",
+    "description": "As a passionate Full Stack Web and Mobile Developer, I bring over two years of comprehensive experience in the software development lifecycle, including project planning, UI/UX design, development, testing, deployment, and ongoing maintenance. My ability to quickly adapt and learn new technologies makes me a valuable asset to any team, and I am confident in my capacity to contribute effectively to your company's success.",
+    "downloadResume": "Download Resume"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "viewProjects": "View All Projects",
+    "viewLivePreview": "View Live Preview",
+    "projectList": [
+      {
+        "id": "natour",
+        "name": "Natour",
+        "description": "A productivity app that uses AI to help users organize, prioritize, and automate their daily tasks in nature.",
+        "images": [
+          "/images/natour/natour-1.png",
+          "/images/natour/natour-2.png",
+          "/images/natour/natour-3.png",
+          "/images/natour/natour-4.png"
+        ],
+        "functionality": [
+          "AI-powered task suggestions",
+          "Calendar and reminders integration",
+          "Automated task categorization",
+          "Collaboration and shared task lists",
+          "Progress tracking and analytics"
+        ],
+        "technologies": [
+          "react",
+          "nodeJs",
+          "mongodb",
+          "openai",
+          "redux",
+          "docker"
+        ],
+        "livePreview": "https://task-manager-ai.example.com",
+        "github": "#"
+      },
+      {
+        "id": "crown-clothing",
+        "name": "Crown Clothing",
+        "description": "An e-commerce platform for trendy apparel with seamless checkout and real-time inventory.",
+        "images": [
+          "/images/crown-clothing/crown-clothing-1.png",
+          "/images/crown-clothing/crown-clothing-2.png",
+          "/images/crown-clothing/crown-clothing-3.png",
+          "/images/crown-clothing/crown-clothing-4.png"
+        ],
+        "functionality": [
+          "User authentication and profile management",
+          "Shopping cart with Stripe payment integration",
+          "Admin dashboard for product and order management",
+          "Product search and filtering",
+          "Order history and tracking"
+        ],
+        "technologies": [
+          "html",
+          "sass",
+          "javascipt",
+          "react",
+          "cypress",
+          "redux",
+          "styledComponnets",
+          "stripe"
+        ],
+        "livePreview": "https://crown-clothing.example.com",
+        "github": "#"
+      },
+      {
+        "id": "nexter",
+        "name": "Nexter",
+        "description": "A social platform for developers to share projects, collaborate, and find theri next job opportunities.",
+        "images": [
+          "/images/nexter/nexter-1.png",
+          "/images/nexter/nexter-2.png",
+          "/images/nexter/nexter-3.png",
+          "/images/nexter/nexter-4.png"
+        ],
+        "functionality": [
+          "Real-time chat and messaging",
+          "Project portfolio showcase",
+          "Job board with application tracking",
+          "Developer blog and article publishing",
+          "Event and meetup organization"
+        ],
+        "technologies": [
+          "react",
+          "nodeJs",
+          "express",
+          "postgresql",
+          "redux",
+          "webhooks"
+        ],
+        "livePreview": "https://dev-connect.example.com",
+        "github": "#"
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "viewCertification": "View Certification",
+    "accomplishment": "Accomplishment",
+    "viewFullEducationHistory": "View Full Education History",
+    "educationHistory": [
+      {
+        "date": "2022 - 2025",
+        "program": "B.S Honours with Specialization in Computer Science",
+        "school": "University Of Ottawa",
+        "description": "Completed an intensive program focused on advanced computer science concepts, software engineering, and research projects.",
+        "workload": [
+          "Developed a full-stack web application as a capstone project",
+          "Conducted research in artificial intelligence and machine learning",
+          "Collaborated in team-based software engineering courses",
+          "Maintained a GPA of 3.8/4.0",
+          "Participated in the Computer Science Student Association"
+        ]
+      },
+      {
+        "date": "2019 - 2021",
+        "program": "Diploma in Computer Programming",
+        "school": "Algonquin College",
+        "description": "Gained practical experience in programming, databases, and application development through hands-on coursework.",
+        "workload": [
+          "Built several CRUD applications using Java and C#",
+          "Designed and implemented SQL database schemas",
+          "Completed a co-op placement as a junior developer",
+          "Led a group project to develop a mobile app",
+          "Received Dean’s Honour List recognition"
+        ]
+      },
+      {
+        "date": "2017 - 2019",
+        "program": "High School Diploma",
+        "school": "Sir Robert Borden High School",
+        "description": "Graduated with honours, focusing on STEM courses and extracurricular technology activities.",
+        "workload": [
+          "Graduated with honours",
+          "Founded the school coding club",
+          "Won 2nd place in a regional science fair",
+          "Volunteered as a peer tutor in mathematics",
+          "Participated in robotics competitions"
+        ]
+      },
+      {
+        "date": "2016",
+        "program": "Certificate in Data Analytics",
+        "school": "Coursera (Online)",
+        "description": "Completed an intensive online certificate program focused on data analysis, visualization, and statistical methods.",
+        "workload": [
+          "Analyzed real-world datasets using Python and R",
+          "Created interactive dashboards with Tableau",
+          "Completed a capstone project on business data insights",
+          "Earned a certificate with distinction",
+          "Presented findings in a virtual symposium"
+        ]
+      },
+      {
+        "date": "2015",
+        "program": "Full Stack Web Development Bootcamp",
+        "school": "CodeCrafters Academy",
+        "description": "Participated in a fast-paced bootcamp covering modern web development technologies and agile methodologies.",
+        "workload": [
+          "Built and deployed a MERN stack e-commerce site",
+          "Worked in agile sprints with a cross-functional team",
+          "Integrated RESTful APIs and third-party services",
+          "Received 'Top Project' award for final demo",
+          "Mentored new students as a teaching assistant"
+        ]
+      }
+    ]
+  },
+  "workHistory": {
+    "title": "Work History",
+    "viewWorkHistory": "View Full Work History",
+    "workHistoryList": [
+      {
+        "companyName": "Amazon, Inc",
+        "companyLogo": "🖌️",
+        "jobTitle": "Senior Frontend Engineer",
+        "startDate": "Jan 2019",
+        "endDate": "Present",
+        "companyDescription": "A wonderful startup charity focused on helping pregnant women throughout their pregnancy by supporting them with care packages tailored to each trimester.",
+        "responsibilities": [
+          "A Complete authentication system; Login, Sign up, password reset / updater , route guarding, security, user roles, etc.",
+          "Admin dashboard; To manage registrations, blog posts, subscribers newsletters, etc.",
+          "Events calendar system; Users can register for various charity events, each event has a chat forum similar to reddit, etc.",
+          "Real time chat; Users can join various groups and chat in real time.",
+          "A full stack cross platform (iOs & Android) mobile app that satisfied the business requirements. Some of which includes; Users can track their diet , sleep, etc . View company news & blogs, Ask question and get replies in forums , etc",
+          "Real time chat; Users can join various groups and chat in real time."
+        ],
+        "technologies": [
+          "react",
+          "typescipt",
+          "redux",
+          "reactNative",
+          "android",
+          "ios",
+          "nodeJs",
+          "express",
+          "postgresql",
+          "oauth",
+          "twilio",
+          "firebase",
+          "docker",
+          "github",
+          "jest",
+          "cypress",
+          "webhooks"
+        ]
+      },
+      {
+        "companyName": "PixelForge Studios",
+        "companyLogo": "🖌️",
+        "jobTitle": "Lead UI/UX Developer",
+        "startDate": "Feb 2017",
+        "endDate": "Dec 2018",
+        "companyDescription": "A creative agency specializing in interactive web experiences and digital branding for startups and tech companies.",
+        "responsibilities": [
+          "Designed and implemented interactive landing pages for high-profile clients.",
+          "Led a team of 5 developers in building a reusable component library.",
+          "Collaborated with designers to translate Figma prototypes into pixel-perfect React components.",
+          "Optimized web applications for accessibility and performance.",
+          "Introduced automated testing and CI/CD pipelines to the frontend workflow."
+        ],
+        "technologies": [
+          "html",
+          "sass",
+          "react",
+          "typescipt",
+          "styledComponnets",
+          "redux",
+          "jest",
+          "cypress",
+          "github",
+          "webhooks"
+        ]
+      },
+      {
+        "companyName": "HealthSync Solutions",
+        "companyLogo": "💡",
+        "jobTitle": "Full Stack Developer",
+        "startDate": "Jun 2015",
+        "endDate": "Jan 2017",
+        "companyDescription": "Developed digital health platforms connecting patients and providers, focusing on secure data exchange and real-time communication.",
+        "responsibilities": [
+          "Built secure patient portals with real-time messaging and appointment scheduling.",
+          "Integrated third-party APIs for health data synchronization.",
+          "Implemented role-based access control and data encryption.",
+          "Worked closely with backend engineers to optimize RESTful APIs.",
+          "Maintained comprehensive unit and integration test coverage."
+        ],
+        "technologies": [
+          "react",
+          "typescipt",
+          "nodeJs",
+          "express",
+          "postgresql",
+          "redis",
+          "oauth",
+          "twilio",
+          "rabbitmqBackend",
+          "docker",
+          "jest",
+          "github"
+        ]
+      },
+      {
+        "companyName": "EcoTrack Analytics",
+        "companyLogo": "🌱",
+        "jobTitle": "Frontend Engineer",
+        "startDate": "Aug 2013",
+        "endDate": "May 2015",
+        "companyDescription": "Analytics SaaS startup providing environmental data dashboards and reporting tools for enterprise clients.",
+        "responsibilities": [
+          "Developed interactive dashboards for visualizing environmental metrics.",
+          "Implemented data filtering and export features for enterprise users.",
+          "Collaborated with data scientists to display real-time analytics.",
+          "Refactored legacy codebase to modern React and TypeScript.",
+          "Presented technical workshops on frontend best practices."
+        ],
+        "technologies": [
+          "html",
+          "sass",
+          "react",
+          "typescipt",
+          "styledComponnets",
+          "redux",
+          "elasticsearch",
+          "jest",
+          "cypress",
+          "webhooks",
+          "github"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills & Integrations",
+    "viewSkills": "View All Skills",
+    "skillCategories": [
+      {
+        "name": "Front End",
+        "id": "frontEnd",
+        "description": "Crafting clean responsive and intuitive user interfaces that deliver seamless, engaging user experiences. I specialize in translating complex requirements into visually appealing layouts, ensuring accessibility and performance across all devices.<br /><br /> My approach combines modern frameworks, best practices, and a keen eye for design to create applications that users love to interact with."
+      },
+      {
+        "name": "Back End",
+        "id": "backEnd",
+        "description": "Building agile robust server-side applications and APIs to power efficient, scalable solutions. My expertise includes designing secure data architectures, optimizing performance, and implementing business logic that drives real-world results.<br /><br /> I leverage the latest technologies and methodologies to ensure reliability, maintainability, and seamless integration with front-end systems."
+      },
+      {
+        "name": "Integrations",
+        "id": "integrations",
+        "description": "Connecting systems and services through reliable, secure, and efficient integration solutions. I excel at orchestrating data flows between diverse platforms, automating workflows, and ensuring smooth communication across APIs and third-party services.<br /><br /> My focus is on delivering integrations that enhance productivity, reduce manual effort, and scale with evolving business needs."
+      },
+      {
+        "name": "AI",
+        "id": "ai",
+        "description": "Leveraging artificial intelligence and machine learning to build intelligent, data-driven solutions. My experience includes developing and integrating AI models, automating decision-making processes, and enhancing applications with natural language processing, computer vision, and predictive analytics.<br /><br /> I focus on practical AI implementations that deliver measurable value, improve user experiences, and drive innovation."
+      }
+    ]
+  },
+  "ai": {
+    "chatWithAi": "Chat with AI assistant",
+    "textPlaceholder": "Ask something like 'Does he know React?'"
+  }
+}

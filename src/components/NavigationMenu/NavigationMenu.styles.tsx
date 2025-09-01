@@ -82,3 +82,39 @@ export const NavigationMenuItem = styled(Link)`
     transform: scale(1.5);
 	}
 `;
+
+export const AiChatAction = styled("div")`
+	background-color: ${(props) => props.theme.primaryColor};
+	width: 100%;
+	padding: 0.9vw 0 1vw 0;
+	border-bottom-left-radius: 2vw;
+	border-bottom-right-radius: 2vw;
+	opacity: 1;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&:hover {
+		transform: scale(1);
+		cursor: pointer;
+	}
+
+	.chatBox {
+		background-color: ${(props) => props.theme.background};
+		width: 20vw;
+		position: absolute;
+		left: 120%;
+		top: 20%;
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.65);
+		border-radius: 1vw;
+
+		&:hover {
+			cursor: default;
+		}
+	}
+
+	.chatBox.chatBoxHidden {
+		display: none;
+	}
+`;
