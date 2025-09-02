@@ -57,6 +57,9 @@ export interface ILanguageTexts {
 		title: string;
 		viewProjects: string;
 		viewLivePreview: string;
+		description: string;
+		functionalities: string;
+		technologies: string;
 		projectList: {
 			id: string;
 			name: string;
@@ -73,12 +76,18 @@ export interface ILanguageTexts {
 			}[];
 			livePreview?: string;
 			github?: string;
+			primaryColor?: string;
+			secoundaryColor?: string;
 		}[];
 	};
 	ai: {
 		chatWithAi: string;
 		textPlaceholder: string;
 	};
+	notFound: {
+		pageNotFound: string,
+		returnHome: string,
+	}
 }
 export const englishTexts: ILanguageTexts = {
 	aboutMe: {
@@ -94,6 +103,9 @@ export const englishTexts: ILanguageTexts = {
 		title: "Featured Projects",
 		viewProjects: "View All Projects",
 		viewLivePreview: "View Live Preview",
+		description: "Description",
+		technologies: "Technologies",
+		functionalities: "Functionalities",
 		projectList: [
 			{
 				id: "natour",
@@ -105,6 +117,7 @@ export const englishTexts: ILanguageTexts = {
 					"/images/natour/natour-2.png",
 					"/images/natour/natour-3.png",
 					"/images/natour/natour-4.png",
+					"/images/natour/natour-5.png",
 				],
 				functionality: [
 					"AI-powered task suggestions",
@@ -123,6 +136,8 @@ export const englishTexts: ILanguageTexts = {
 				],
 				livePreview: "https://task-manager-ai.example.com",
 				github: "#",
+				primaryColor: "#AC3459",
+				secoundaryColor: "#F7F7F7",
 			},
 			{
 				id: "crown-clothing",
@@ -134,6 +149,7 @@ export const englishTexts: ILanguageTexts = {
 					"/images/crown-clothing/crown-clothing-2.png",
 					"/images/crown-clothing/crown-clothing-3.png",
 					"/images/crown-clothing/crown-clothing-4.png",
+					"/images/crown-clothing/crown-clothing-5.png",
 				],
 				functionality: [
 					"User authentication and profile management",
@@ -154,6 +170,8 @@ export const englishTexts: ILanguageTexts = {
 				],
 				livePreview: "https://crown-clothing.example.com",
 				github: "#",
+				primaryColor: "#000000",
+				secoundaryColor: "#FFFFFF",
 			},
 			{
 				id: "nexter",
@@ -165,6 +183,7 @@ export const englishTexts: ILanguageTexts = {
 					"/images/nexter/nexter-2.png",
 					"/images/nexter/nexter-3.png",
 					"/images/nexter/nexter-4.png",
+					"/images/nexter/nexter-5.png",
 				],
 				functionality: [
 					"Real-time chat and messaging",
@@ -183,6 +202,8 @@ export const englishTexts: ILanguageTexts = {
 				],
 				livePreview: "https://dev-connect.example.com",
 				github: "#",
+				primaryColor: "#c39963",
+				secoundaryColor: "#2E2E4B",
 			},
 		],
 	},
@@ -289,23 +310,14 @@ export const englishTexts: ILanguageTexts = {
 					"Real time chat; Users can join various groups and chat in real time.",
 				],
 				technologies: [
-					SKILLS.react,
-					SKILLS.typescipt,
-					SKILLS.redux,
-					SKILLS.reactNative,
-					SKILLS.android,
-					SKILLS.ios,
-					SKILLS.nodeJs,
-					SKILLS.express,
-					SKILLS.postgresql,
-					SKILLS.oauth,
-					SKILLS.twilio,
-					SKILLS.firebase,
-					SKILLS.docker,
-					SKILLS.github,
-					SKILLS.jest,
-					SKILLS.cypress,
-					SKILLS.webhooks,
+					html,
+					sass,
+					typescipt,
+					react,
+					redux,
+					github,
+					jest,
+					styledComponnets,
 				],
 			},
 			{
@@ -324,16 +336,14 @@ export const englishTexts: ILanguageTexts = {
 					"Introduced automated testing and CI/CD pipelines to the frontend workflow.",
 				],
 				technologies: [
-					SKILLS.html,
-					SKILLS.sass,
-					SKILLS.react,
-					SKILLS.typescipt,
-					SKILLS.styledComponnets,
-					SKILLS.redux,
-					SKILLS.jest,
-					SKILLS.cypress,
-					SKILLS.github,
-					SKILLS.webhooks,
+					html,
+					sass,
+					typescipt,
+					react,
+					redux,
+					github,
+					jest,
+					styledComponnets,
 				],
 			},
 			{
@@ -352,18 +362,14 @@ export const englishTexts: ILanguageTexts = {
 					"Maintained comprehensive unit and integration test coverage.",
 				],
 				technologies: [
-					SKILLS.react,
-					SKILLS.typescipt,
-					SKILLS.nodeJs,
-					SKILLS.express,
-					SKILLS.postgresql,
-					SKILLS.redis,
-					SKILLS.oauth,
-					SKILLS.twilio,
-					SKILLS.rabbitmqBackend,
-					SKILLS.docker,
-					SKILLS.jest,
-					SKILLS.github,
+					html,
+					sass,
+					typescipt,
+					react,
+					redux,
+					github,
+					jest,
+					styledComponnets,
 				],
 			},
 			{
@@ -382,17 +388,14 @@ export const englishTexts: ILanguageTexts = {
 					"Presented technical workshops on frontend best practices.",
 				],
 				technologies: [
-					SKILLS.html,
-					SKILLS.sass,
-					SKILLS.react,
-					SKILLS.typescipt,
-					SKILLS.styledComponnets,
-					SKILLS.redux,
-					SKILLS.elasticsearch,
-					SKILLS.jest,
-					SKILLS.cypress,
-					SKILLS.webhooks,
-					SKILLS.github,
+					html,
+					sass,
+					typescipt,
+					react,
+					redux,
+					github,
+					jest,
+					styledComponnets,
 				],
 			},
 		],
@@ -435,6 +438,12 @@ export const englishTexts: ILanguageTexts = {
 		chatWithAi: "Chat with AI assistant",
 		textPlaceholder: "Ask something like 'Does he know React?'",
 	},
+
+	// NOT FOUND SECTION
+	notFound: {
+		pageNotFound: "The page you requested was not found",
+		returnHome: "Return Home",
+	},
 };
 
 export const frenchTexts: ILanguageTexts = {
@@ -449,6 +458,9 @@ export const frenchTexts: ILanguageTexts = {
 		title: "Projets en vedette",
 		viewLivePreview: "Voir l'aperçu en direct",
 		viewProjects: "Voir Tous les Projets",
+		description: "La description",
+		technologies: "Les technologies",
+		functionalities: "Fonctionnalités",
 		projectList: [
 			{
 				id: "natour",
@@ -460,6 +472,7 @@ export const frenchTexts: ILanguageTexts = {
 					"/images/natour/natour-2.png",
 					"/images/natour/natour-3.png",
 					"/images/natour/natour-4.png",
+					"/images/natour/natour-5.png",
 				],
 				functionality: [
 					"Suggestions de tâches alimentées par l'IA",
@@ -478,6 +491,8 @@ export const frenchTexts: ILanguageTexts = {
 				],
 				livePreview: "https://task-manager-ai.example.com",
 				github: "#",
+				primaryColor: "#AC3459",
+				secoundaryColor: "#F7F7F7",
 			},
 			{
 				id: "crown-clothing",
@@ -489,6 +504,7 @@ export const frenchTexts: ILanguageTexts = {
 					"/images/crown-clothing/crown-clothing-2.png",
 					"/images/crown-clothing/crown-clothing-3.png",
 					"/images/crown-clothing/crown-clothing-4.png",
+					"/images/crown-clothing/crown-clothing-5.png",
 				],
 				functionality: [
 					"Authentification des utilisateurs et gestion des profils",
@@ -509,6 +525,8 @@ export const frenchTexts: ILanguageTexts = {
 				],
 				livePreview: "https://crown-clothing.example.com",
 				github: "#",
+				primaryColor: "#000000",
+				secoundaryColor: "#FFFFFF",
 			},
 			{
 				id: "nexter",
@@ -520,6 +538,7 @@ export const frenchTexts: ILanguageTexts = {
 					"/images/nexter/nexter-2.png",
 					"/images/nexter/nexter-3.png",
 					"/images/nexter/nexter-4.png",
+					"/images/nexter/nexter-5.png",
 				],
 				functionality: [
 					"Chat et messagerie en temps réel",
@@ -538,6 +557,8 @@ export const frenchTexts: ILanguageTexts = {
 				],
 				livePreview: "https://dev-connect.example.com",
 				github: "#",
+				primaryColor: "#c39963",
+				secoundaryColor: "#2E2E4B",
 			},
 		],
 	},
@@ -562,23 +583,14 @@ export const frenchTexts: ILanguageTexts = {
 					"Chat en temps réel; Les utilisateurs peuvent rejoindre divers groupes et discuter en temps réel.",
 				],
 				technologies: [
-					SKILLS.react,
-					SKILLS.typescipt,
-					SKILLS.redux,
-					SKILLS.reactNative,
-					SKILLS.android,
-					SKILLS.ios,
-					SKILLS.nodeJs,
-					SKILLS.express,
-					SKILLS.postgresql,
-					SKILLS.oauth,
-					SKILLS.twilio,
-					SKILLS.firebase,
-					SKILLS.docker,
-					SKILLS.github,
-					SKILLS.jest,
-					SKILLS.cypress,
-					SKILLS.webhooks,
+					html,
+					sass,
+					typescipt,
+					react,
+					redux,
+					github,
+					jest,
+					styledComponnets,
 				],
 			},
 			{
@@ -597,16 +609,14 @@ export const frenchTexts: ILanguageTexts = {
 					"Introduction de tests automatisés et de pipelines CI/CD dans le flux de travail frontend.",
 				],
 				technologies: [
-					SKILLS.html,
-					SKILLS.sass,
-					SKILLS.react,
-					SKILLS.typescipt,
-					SKILLS.styledComponnets,
-					SKILLS.redux,
-					SKILLS.jest,
-					SKILLS.cypress,
-					SKILLS.github,
-					SKILLS.webhooks,
+					html,
+					sass,
+					typescipt,
+					react,
+					redux,
+					github,
+					jest,
+					styledComponnets,
 				],
 			},
 			{
@@ -625,18 +635,14 @@ export const frenchTexts: ILanguageTexts = {
 					"Maintien d'une couverture complète des tests unitaires et d'intégration.",
 				],
 				technologies: [
-					SKILLS.react,
-					SKILLS.typescipt,
-					SKILLS.nodeJs,
-					SKILLS.express,
-					SKILLS.postgresql,
-					SKILLS.redis,
-					SKILLS.oauth,
-					SKILLS.twilio,
-					SKILLS.rabbitmqBackend,
-					SKILLS.docker,
-					SKILLS.jest,
-					SKILLS.github,
+					html,
+					sass,
+					typescipt,
+					react,
+					redux,
+					github,
+					jest,
+					styledComponnets,
 				],
 			},
 			{
@@ -655,17 +661,14 @@ export const frenchTexts: ILanguageTexts = {
 					"Présentation d'ateliers techniques sur les meilleures pratiques frontend.",
 				],
 				technologies: [
-					SKILLS.html,
-					SKILLS.sass,
-					SKILLS.react,
-					SKILLS.typescipt,
-					SKILLS.styledComponnets,
-					SKILLS.redux,
-					SKILLS.elasticsearch,
-					SKILLS.jest,
-					SKILLS.cypress,
-					SKILLS.webhooks,
-					SKILLS.github,
+					html,
+					sass,
+					typescipt,
+					react,
+					redux,
+					github,
+					jest,
+					styledComponnets,
 				],
 			},
 		],
@@ -781,6 +784,12 @@ export const frenchTexts: ILanguageTexts = {
 	ai: {
 		chatWithAi: "Assistant IA",
 		textPlaceholder: "Posez une question à l'assistant IA",
+	},
+
+	// NOT FOUND SECTION
+	notFound: {
+		pageNotFound: "La page que vous avez demandée n'a pas été trouvée",
+		returnHome: "Retour à la maison",
 	},
 };
 

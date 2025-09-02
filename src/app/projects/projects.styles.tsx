@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styled, { keyframes } from "styled-components";
 
 export const ProjectsContainer = styled.div`
@@ -114,7 +115,7 @@ export const SlideShowContainer = styled.div`
   }
 `;
 
-export const ProjectsDetails = styled.div`
+export const ProjectsDetails = styled(Link)`
 	background-color: ${(props) => props.theme.background};
 	display: flex;
 	flex-direction: column;
@@ -128,6 +129,7 @@ export const ProjectsDetails = styled.div`
 	box-shadow: 0 4px 26px rgba(0, 0, 0, 0.25);
   border-radius: 1vw;
   transform: translateX(-10%);
+	text-decoration: none;
 
   .details{
     display: flex;

@@ -31,5 +31,25 @@ export const AppContainer = styled.div`
 export const ContentContainer = styled.div`
 	width: 100%;
 	padding: 0 0 0 2.5vw;
-  overflow: scroll;
+  overflow: auto;
 `;
+
+export const NotFoundPageContainer = styled.div`
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  gap: 1.5vw;
+
+	a {
+		padding: 1vw 2vw;
+		text-decoration: none;
+		background-color: ${(props) => props.theme.primaryColor};
+		color: ${(props) => props.theme.white};
+    border-radius: 3vw;
+	}
+`;
+
+

@@ -32,6 +32,7 @@ const Projects = () => {
 						technologies,
 						description,
 						functionality,
+						id
 					},
 					index
 				) => (
@@ -46,7 +47,7 @@ const Projects = () => {
 							</a>
 						</div>
 						<SlideShow images={images} />
-						<ProjectsDetails className="detailsCard">
+						<ProjectsDetails href={`/projects/${id}`} className="detailsCard">
 							<div className="details">
 								<p>{description}</p>
 								<ListItems>
