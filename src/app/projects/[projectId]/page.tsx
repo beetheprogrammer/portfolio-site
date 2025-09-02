@@ -21,7 +21,16 @@ const Project = ({ params }: { params: Promise<{ projectId: string }> }) => {
 		({ id }) => id === projectId
 	);
 
-	
+	useEffect(() => {
+		const timer = setInterval(() => {
+			if (imagesCount) {
+				setCurrentImageIndex((prev) =>
+					prev === imagesCount - 1 ? 0 : prev + 1
+				);
+			}
+		}, 2000);
+		return () => clearInterval(timer);
+	}, []);
 
 	if (!PROJECT) {
 		return notFound();
@@ -29,14 +38,6 @@ const Project = ({ params }: { params: Promise<{ projectId: string }> }) => {
 
 	const imagesCount = PROJECT?.images.length;
 
-	useEffect(()=>{
-		const timer = setInterval(()=>{
-			if (imagesCount) {
-				setCurrentImageIndex((prev) => prev === imagesCount - 1 ? 0 : prev + 1 );
-			}
-		}, 2000)
-		return () => clearInterval(timer)
-	}, [])
 
 
 	function getNextIndices(currentIndex: number, length: number) {
